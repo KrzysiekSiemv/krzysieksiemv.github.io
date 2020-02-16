@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Skrypty -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+        <!-- OpenGraph -->
+        <meta property="og:url" content="https://krzysieksiemv.github.io">
+        <meta property="og:title" content="Zwyczajny Blog">
+        <meta property="og:description" content="Blog o tematyce technologicznej, zawierający także programy oraz systemy możliwe do zainstalowania na komputerze">
+        <meta property="og:image" content="resources/banner.png">        
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/24720775?s=460&v=4" />
+        <!-- Szybki styl-->
+        <style>
+        img {
+            margin: 16px 0px;
+            width: 128px;
+        }
+        
+        .card {
+            margin-bottom: 16px;
+        }
+
+        .col-sm-6 .card-body {
+            min-height: 380px;
+        }
+
+        i {
+            font-size: 64px;
+            color: #1e1e1e;
+        }
+
+        .modal-content i {
+            font-size: 32px;
+            display: inline-block;
+            color: white;
+        }
+
+        .jumbotron {
+            margin:0px;
+        }
+
+        </style>
+        <!-- Takie fajne cosie -->
+        <title>Programy - Zwyczajny Blog</title>
+    </head>
+
+    <body>
+        <div class="jumbotron text-center"> <!-- Header -->
+            <h1 class="display-3">Zwyczajny Blog</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark"> <!-- Navigation Bar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://krzysieksiemv.github.io">Strona główna</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://krzysieksiemv.github.io/all-posts">Wszystkie posty</a>
+                            <a class="dropdown-item" href="https://krzysieksiemv.github.io/tech-posts">Technologie</a>
+                            <a class="dropdown-item" href="https://krzysieksiemv.github.io/other-posts">Posty o byle czym</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://krzysieksiemv.github.io/all-projects">Moje projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://krzysieksiemv.github.io/softwares">Programy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://krzysieksiemv.github.io/operating-systems">Systemy operacyjne</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://krzysieksiemv.github.io/discuss">Rozmowy w toku</a>
+                    </li>                                 
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 24px;">
+            <div class="row">
+                <div class="col"> <!-- Left column -->
+                    <div class="text-center row" id="operating-systems">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Windows</h2>
+                                    <i class="fab fa-windows"></i>
+                                    <p class="card-text">Rodzina systemów operacyjnych stworzonych przez firmę Microsoft</p>
+                                    <button class="btn btn-primary" data-target="#WindowsModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Windows Server</h2>
+                                    <i class="fab fa-windows"></i>
+                                    <p class="card-text">Grupa systemów operacyjnych firmy Microsoft przeznaczonych dla serwerów</p>
+                                    <button class="btn btn-primary" data-target="#WindowsServerModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Ubuntu</h2>
+                                    <i class="fab fa-ubuntu"></i>
+                                    <p class="card-text">Kompletna dystrybucja systemu operacyjnego GNU/Linux, przeznaczona głównie do zastosowań biurowych i domowych</p>
+                                    <button class="btn btn-primary" data-target="#UbuntuModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Fedora</h2>
+                                    <i class="fab fa-fedora"></i>
+                                    <p class="card-text">Dystrybucja Linuxa, w której twórcy stawiają na innowacyjność, jest następcą Red Hat Linux, rozwijany przez Fedora Project.</p>
+                                    <button class="btn btn-primary" data-target="#FedoraModal" data-toggle="modal">Pokaż wersję systemu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">openSUSE</h2>
+                                    <i class="fab fa-suse"></i>
+                                    <p class="card-text">Dystrybucja Linuksa, stworzona z myślą o użytkownikach korzystających na co dzień z interfejsu graficznego i przeznaczona zarówno dla użytkowników domowych, jak i do zastosowań komercyjnych</p>
+                                    <button class="btn btn-primary" data-target="#openSUSEModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Centos</h2>
+                                    <i class="fab fa-centos"></i>
+                                    <p class="card-text">Dystrybucja Linuksa oparta na Red Hat Enterprise Linux i mająca być z nim w całości kompatybilna. </p>
+                                    <button class="btn btn-primary disabled" data-target="" data-toggle="modal">Wkrótce</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Mint</h2>
+                                    <i class="fab fa-linux"></i>
+                                    <p class="card-text">Dystrybucja systemu GNU/Linux oparta na Ubuntu oraz Debianie, skierowana do początkujących użytkowników</p>
+                                    <button class="btn btn-primary disabled" data-target="" data-toggle="modal">Wkrótce</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Android</h2>
+                                    <i class="fab fa-android"></i>
+                                    <p class="card-text">System operacyjny z jądrem Linux dla urządzeń mobilnych takich jak telefony komórkowe, smartfony, tablety i netbooki. </p>
+                                    <button class="btn btn-primary" data-target="#AndroidModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">macOS</h2>
+                                    <i class="fab fa-apple"></i>
+                                    <p class="card-text">Rodzina uniksowych systemów operacyjnych produkowanych i rozprowadzanych przez Apple Inc. dostępnych oficjalnie jedynie dla komputerów Macintosh </p>
+                                    <button class="btn btn-primary" data-target="#macOSModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">MS-DOS</h2>
+                                    <i class="fab fa-microsoft"></i>
+                                    <p class="card-text">system operacyjny stworzony przez przedsiębiorstwo Microsoft na podstawie nabytego przez nią kodu źródłowego systemu QDOS stworzonego przez Seattle Computers</p>
+                                    <button class="btn btn-primary" data-target="#MSDOSModal" data-toggle="modal">Pokaż wersje systemów</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4"> <!-- Right column -->
+                    <h2>O mnie</h2>
+                    <div class="card"> <!-- About me -->
+                        <img class="card-img-top" src="resources/avatar.png" alt="My Face">
+                        <div class="card-body">
+                            <h4 class="card-title">Krzysztof Smaga</h4>
+                            <p class="card-text">Twórca tych pięknych stron, jakie znajdują się na GitHubie.</p>
+                            <a href="https://github.com/KrzysiekSiemv">Profil na GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modals"> <!-- All modals -->
+                    <div class="modal fade" id="WindowsModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body text-center">
+                                    <div class="btn-group btn-group-sm">                
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-10.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 10</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-8.1.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 8.1</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-8.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 8</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-7.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 7</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Vista.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Vista</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-XP.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> XP</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Old.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Starsze systemy Windows</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="WindowsServerModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body text-center">
+                                    <div class="btn-group btn-group-sm">                
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Server-2019';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2019</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Server-2016';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2016</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Server-2012';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2012</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Server-2008';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2008</button>
+                                        <button onclick="location.href='https://krzysieksiemv.github.io/operating-systems/Windows-Server-2003';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2003</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="MSDOSModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body text-center">
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://winworldpc.com/download/40c395e2-8093-c2a9-18c3-9a11c3a4efbf/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 7.1</button>
+                                        <button onclick="location.href='https://winworldpc.com/download/c38fc38d-68c2-bbe2-80a6-4b11c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.22</button>
+                                        <button onclick="location.href='https://winworldpc.com/download/66c3ba5c-77e2-80a1-c2bd-11c3a4c2ac5a/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.21</button>
+                                        <button onclick="location.href='https://winworldpc.com/download/c3ad0939-c397-e280-a1c2-b411c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.20</button>
+                                        <button onclick="location.href='https://winworldpc.com/download/c3ae7c56-c2a1-e280-a1c2-ab11c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.0</button>
+                                        <button onclick="location.href='https://winworldpc.com/download/0b4702c2-ba44-7a11-c3a7-c29d25525400/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 5.0</button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="UbuntuModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body">
+                                    <p>W przyszłości pojawią się inne systemy z dystrybucji Linux. Na ten czas pozostaje tylko Ubuntu</p>
+                                    <h2>Ubuntu 19.10</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/19.10/ubuntu-19.10-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Ubuntu 19.04</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/19.04/ubuntu-19.04-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                                    </div>
+                                    <br>            
+                                    <br>
+                                    <h2>Ubuntu 18.04.3</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Ubuntu 16.04.6</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Ubuntu 14.04.6</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Ubuntu 12.04.5</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                                        <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="openSUSEModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                            <div class="modal-body">
+                                <h2>openSUSE Leap 15.0</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/iso/openSUSE-Leap-15.0-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                                </div>
+                                <h2>openSUSE Leap 15.1</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/iso/openSUSE-Leap-15.1-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                                </div>
+                                <h2>openSUSE Leap 15.2</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-DVD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-GNOME-Live-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-KDE-Live-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-Rescue-CD-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (resources)</button>
+                                </div>
+                                <h2>openSUSE Leap 42.3</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='https://download.opensuse.org/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                                </div>
+                                <h2>openSUSE Tumbleweed</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                                    <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                                    <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="FedoraModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                            <div class="modal-body">
+                                <h2>Fedora 31</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/31/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-31-1.9.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                                </div>
+                                <h2>Fedora 30</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/30/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-30-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/30/Server/x86_64/iso/Fedora-Server-dvd-x86_64-30-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                                </div>
+                                <h2>Fedora 29</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/29/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-29-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                                    <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/29/Server/x86_64/iso/Fedora-Server-dvd-x86_64-29-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="AndroidModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body">
+                                    <p>Obrazy ISO zostały zaczerpnięte z projektu Android-x86, możemy zainstalować na VirtualBox, VMWare oraz na maszynie rzeczywistym</p>
+                                    <h2>Android 9.0</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/71931/android-x86_64-9.0-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/71931/android-x86-9.0-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 8.1</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/69704/android-x86_64-8.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/69704/android-x86-8.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 7.1</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/67834/android-x86_64-7.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/67834/android-x86-7.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 6.0</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65890/android-x86_64-6.0-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65890/android-x86-6.0-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 5.1</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65697/android-x86_64-5.1-rc1.img/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65697/android-x86-5.1-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 4.4</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65695/android-x86-4.4-r5.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 4.0</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/66419/android-x86-4.0-r1-eeepc.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 2.2</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65698/android-x86-2.2-r2-eeepc.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 1.6</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65699/android-x86-1.6-r2.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h2>Android 0.9</h2>
+                                    <div class="btn-group btn-group-lg">                
+                                        <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65700/eeepc-v0.9.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="macOSModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 512px;">
+                                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                <div class="modal-body">
+                                    <p>Aby móc zainstalować macOS na wirtualnej maszynie potrzebujemy: <a href="https://krzysieksiemv.github.io/softwares">VMWare Workstation 15 Player</a> oraz <a href="https://github.com/theJaxon/unlocker/archive/master.zip">VMWare Unlocker</a>, uruchamiamy <code>win-install.bat</code> po pierwszym uruchomieniu VMWare Workstation Player. Jeżeli chcesz zainstalować macOS na swoim komputerze, to polecam zapoznać się z tym poradnikiem <a href="https://poradniki.hackintosh-polska.pl/">Hackintosh Polska</a></p>
+                                    <h2>macOS Catalina 10.15</h2>
+                                        <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS_Catalina_10.15_19A583.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                                    <br>
+                                    <br>
+                                    <h2>macOS Mojave 10.14.1</h2>               
+                                        <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS Mojave 10.14 (18A391) [MAS].dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>           
+                                    <br>
+                                    <br>
+                                    <h2>macOS High Sierra 10.13.6</h2>
+                                        <button onclick="location.href='http://176.9.47.213/themacgo/macOS.High.Sierra.10.13.6.dmg?md5=HDMfJ7CRMxOuI6JqGh83Mg&expires=1580711426';" class="btn btn-primary"><i class="fab fa-apple"></i> Obraz</button>
+                                    <br>
+                                    <br>
+                                        <h2>macOS Sierra 10.12.4</h2>               
+                                        <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS Sierra 10.12.4 [MAS].dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                                    <br>
+                                    <br>
+                                    <h2>macOS El Captain 10.11</h2>              
+                                        <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/OS_X_El_Capitan.app.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid text-center" style="background-color: #1e1e1e; color:white">
+            <div class="container"> 
+                <a style="text-decoration:none; color:white" href="https://github.com/KrzysiekSiemv"><i style="color:white; font-size:18px" class="fab fa-github"></i> Krzysztof 'KrzysiekSiemv' Smaga 2020</a>
+            </div>
+        </div>
+    </body>
+</html>
