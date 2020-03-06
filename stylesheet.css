@@ -1,0 +1,62 @@
+.carousel-item i {
+    font-size: 64px;
+}
+
+.col-sm-4 {
+    display: none;
+}
+
+    .col-sm-4 .card-body {
+        min-height: 380px;
+        background-color: #D8DBE0;
+        margin-bottom: 16px;
+    }
+
+    .col-sm-4 button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .col-sm-4 img {
+        margin: 16px 0px;
+        width: 128px;
+        max-height: 128px;
+    }
+
+.jumbotron {
+    margin:0px;
+}
+
+.show {
+    display:block;
+}
+
+.modal-body i {
+    font-size: 32px;
+}       
+
+#mc_embed_signup {
+    background: #fff; 
+    clear: left; 
+    font: 14px Helvetica,Arial,sans-serif; 
+}
+
+.col-md-3 {
+    padding:16px;
+    flex-direction:column;
+    height:100vh;
+}
+    .col-md-3 button {
+        position:absolute;
+        bottom:0px;
+        left:0px;
+    }
+
+    .col-md-3 h2 {
+        color: white;
+    }
+
+    .col-md-3 img {
+        border-radius: 50%;
+    }

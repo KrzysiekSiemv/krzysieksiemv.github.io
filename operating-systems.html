@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158659914-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-158659914-1');
+        </script>
+        <!-- Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+        <!-- OpenGraph -->
+        <meta property="og:url" content="https://smanky-web.pl">
+        <meta property="og:title" content="Systemy operacyjne">
+        <meta property="og:description" content="Blog o tematyce technologicznej, zawierający także programy oraz systemy możliwe do zainstalowania na komputerze">
+        <meta property="og:image" content="resources/banner.png">        
+        <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/24720775?s=460&v=4" />
+        <!-- Fajne coś -->
+        <title>Systemy Operacyjne - Smanky Web</title>
+    </head>
+
+    <body style="background-color:#D8DBE0;">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-dark">
+                <div class="text-center">
+                  <img src="resources/avatar.png">
+                  <h2>Smanky Web</h2>
+                </div>
+                <nav class="navbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link " href="/">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/softwares.html">Programy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/operating-systems.html">Systemy operacyjne</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/tutorials.html">Jak zrobić...</a>
+                    </li>
+                  </ul>
+                </nav>
+                <br><br>
+                <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#share">Udostępnij lub zasubskrybuj</button>
+              </div>
+          <div class="col">
+            <div class="align-content-around">
+              <div id="ceneo" class="mx-auto" style="margin-bottom: 32px;">
+              <div id="ceneoaffcontainer320560"></div>
+              <a id="ceneoaff-logo" title="Ceneo.pl" href="https://www.ceneo.pl/#pid=20083&crid=320560&cid=34655" rel="nofollow"><img style="border:0;width:1px;height:1px;" src="//app.ceneostatic.pl/common/image/logo/ap-logo-transparent-small.png" alt="Ceneo.pl" /></a>
+              <script type="text/javascript" charset="utf-8">
+              	if (typeof CeneoAPOptions == "undefined" || CeneoAPOptions == null)
+              	{
+              	var CeneoAPOptions = new Array(); 
+              	stamp = parseInt(new Date().getTime()/86400, 10);
+              	var script = document.createElement("script");
+              	script.setAttribute("type", "text/javascript");
+              	script.setAttribute("src", "//partnerzyapi.ceneo.pl/External/ap.js?"+stamp);
+              	script.setAttribute("charset", "utf-8");
+              	var head = document.getElementsByTagName("head")[0];
+              	head.appendChild(script);
+              	}
+              	CeneoAPOptions[CeneoAPOptions.length] =
+              	{
+              		ad_creation: 320560,
+              		ad_channel: 34655,
+              		ad_partner: 20083,
+              		ad_type: 1,
+              		ad_content: '40,41,42,43,470',
+              		ad_format: 1,
+              		ad_newpage: true,
+              		ad_basket: true,
+              		ad_container: 'ceneoaffcontainer320560',
+              		ad_formatTypeId: 1,
+              		ad_contextual: false, 
+              		ad_recommended: false, 
+              		ad_showRank: true 
+              	};
+              </script>
+              </div>
+              <h1 style="border-bottom: 2px solid black; padding-bottom: 5px;">WYBIERZ SYSTEM, JAKI CHCESZ</h1>
+              <p>Tutaj możesz znaleźć system jaki potrzebujesz. Ty decydujesz co chcesz pobrać, nie narzucamy. Dostępne mamy systemy z rodziny:
+                  <ul>
+                      <li>Windows</li>
+                      <li>Windows Server</li>
+                      <li>Ubuntu</li>
+                      <li>Fedora</li>
+                      <li>openSUSE</li>
+                      <li>Android</li>
+                      <li>macOS</li>
+                      <li>MS-DOS</li>
+                  </ul>
+              </p>
+              <div id="OS" class="carousel slide" data-ride="carousel"> 
+                <div class="carousel-inner">
+                  <div class="carousel-item active text-center">
+                    <h2 class="card-title">Windows</h2>
+                    <i class="fab fa-windows"></i>
+                    <p class="card-text">Rodzina systemów operacyjnych stworzonych przez firmę Microsoft</p>
+                    <button class="btn btn-primary" data-target="#WindowsModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">Windows Server</h2>
+                    <i class="fab fa-windows"></i>
+                    <p class="card-text">Grupa systemów operacyjnych firmy Microsoft przeznaczonych dla serwerów</p>
+                    <button class="btn btn-primary" data-target="#WindowsServerModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">Ubuntu</h2>
+                    <i class="fab fa-ubuntu"></i>
+                    <p class="card-text">Kompletna dystrybucja systemu operacyjnego GNU/Linux, przeznaczona głównie do zastosowań biurowych i domowych</p>
+                    <button class="btn btn-primary" data-target="#UbuntuModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">Fedora</h2>
+                    <i class="fab fa-fedora"></i>
+                    <p class="card-text">Dystrybucja Linuxa, w której twórcy stawiają na innowacyjność, jest następcą Red Hat Linux, rozwijany przez Fedora Project.</p>
+                    <button class="btn btn-primary" data-target="#FedoraModal" data-toggle="modal">Pokaż wersję systemu</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">openSUSE</h2>
+                    <i class="fab fa-suse"></i>
+                    <p class="card-text">Dystrybucja Linuksa, stworzona z myślą o użytkownikach korzystających na co dzień z interfejsu graficznego i przeznaczona zarówno dla użytkowników domowych, jak i do zastosowań komercyjnych</p>
+                    <button class="btn btn-primary" data-target="#openSUSEModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">Android</h2>
+                    <i class="fab fa-android"></i>
+                    <p class="card-text">System operacyjny z jądrem Linux dla urządzeń mobilnych takich jak telefony komórkowe, smartfony, tablety i netbooki. </p>
+                    <button class="btn btn-primary" data-target="#AndroidModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">macOS</h2>
+                    <i class="fab fa-apple"></i>
+                    <p class="card-text">Rodzina uniksowych systemów operacyjnych produkowanych i rozprowadzanych przez Apple Inc. dostępnych oficjalnie jedynie dla komputerów Macintosh </p>
+                    <button class="btn btn-primary" data-target="#macOSModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                  <div class="carousel-item text-center">
+                    <h2 class="card-title">MS-DOS</h2>
+                    <i class="fab fa-microsoft"></i>
+                    <p class="card-text">system operacyjny stworzony przez przedsiębiorstwo Microsoft na podstawie nabytego przez nią kodu źródłowego systemu QDOS stworzonego przez Seattle Computers</p>
+                    <button class="btn btn-primary" data-target="#MSDOSModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#OS" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#OS" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modals"> <!-- All modals -->
+        <div class="modal fade" id="WindowsModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body text-center">
+                        <div class="btn-group btn-group-sm">                
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-10.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 10</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-8.1.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 8.1</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-8.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 8</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-7.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 7</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Vista.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Vista</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-XP.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> XP</button>
+                        </div>
+                        <br>
+                        <br>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Old.html';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Starsze systemy Windows</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="WindowsServerModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body text-center">
+                        <div class="btn-group btn-group-sm">                
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Server-2019';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2019</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Server-2016';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2016</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Server-2012';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2012</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Server-2008';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2008</button>
+                            <button onclick="location.href='https://smanky-web.pl/operating-systems/Windows-Server-2003';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 2003</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="MSDOSModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body text-center">
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://winworldpc.com/download/40c395e2-8093-c2a9-18c3-9a11c3a4efbf/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 7.1</button>
+                            <button onclick="location.href='https://winworldpc.com/download/c38fc38d-68c2-bbe2-80a6-4b11c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.22</button>
+                            <button onclick="location.href='https://winworldpc.com/download/66c3ba5c-77e2-80a1-c2bd-11c3a4c2ac5a/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.21</button>
+                            <button onclick="location.href='https://winworldpc.com/download/c3ad0939-c397-e280-a1c2-b411c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.20</button>
+                            <button onclick="location.href='https://winworldpc.com/download/c3ae7c56-c2a1-e280-a1c2-ab11c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 6.0</button>
+                            <button onclick="location.href='https://winworldpc.com/download/0b4702c2-ba44-7a11-c3a7-c29d25525400/from/c3ae6ee2-8099-713d-3411-c3a6e280947e';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> 5.0</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="UbuntuModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <p>W przyszłości pojawią się inne systemy z dystrybucji Linux. Na ten czas pozostaje tylko Ubuntu</p>
+                        <h2>Ubuntu 19.10</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/19.10/ubuntu-19.10-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/19.10/ubuntu-19.10-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Ubuntu 19.04</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/19.04/ubuntu-19.04-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                        </div>
+                        <br>            
+                        <br>
+                        <h2>Ubuntu 18.04.3</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-live-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Ubuntu 16.04.6</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/16.04.6/ubuntu-16.04.6-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Ubuntu 14.04.6</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/14.04.6/ubuntu-14.04.6-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Ubuntu 12.04.5</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-desktop-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Desktop 32-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-amd64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 64-bit</button>
+                            <button onclick="location.href='http://releases.ubuntu.com/12.04.5/ubuntu-12.04.5-server-i386.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-ubuntu"></i> Server 32-bit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="openSUSEModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                <div class="modal-body">
+                    <h2>openSUSE Leap 15.0</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/iso/openSUSE-Leap-15.0-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.0/live/openSUSE-Leap-15.0-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                    </div>
+                    <h2>openSUSE Leap 15.1</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/iso/openSUSE-Leap-15.1-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.1/live/openSUSE-Leap-15.1-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                    </div>
+                    <h2>openSUSE Leap 15.2</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/iso/openSUSE-Leap-15.2-DVD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-GNOME-Live-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-KDE-Live-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/15.2/live/openSUSE-Leap-15.2-Rescue-CD-x86_64-Snapshot22.14-Media.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (resources)</button>
+                    </div>
+                    <h2>openSUSE Leap 42.3</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='https://download.opensuse.org/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                    </div>
+                    <h2>openSUSE Tumbleweed</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> ISO</button>
+                        <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (GNOME)</button>
+                        <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (KDE)</button>
+                        <button onclick="location.href='https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-suse"></i> Live (Rescue)</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="FedoraModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                <div class="modal-body">
+                    <h2>Fedora 31</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/31/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-31-1.9.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/31/Server/x86_64/iso/Fedora-Server-dvd-x86_64-31-1.9.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                    </div>
+                    <h2>Fedora 30</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/30/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-30-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/30/Server/x86_64/iso/Fedora-Server-dvd-x86_64-30-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                    </div>
+                    <h2>Fedora 29</h2>
+                    <div class="btn-group btn-group-lg">
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/29/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-29-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Workstation</button>
+                        <button onclick="location.href='http://ftp.icm.edu.pl/pub/Linux/fedora/linux/releases/29/Server/x86_64/iso/Fedora-Server-dvd-x86_64-29-1.2.iso';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-fedora"></i> Server</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="AndroidModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <p>Obrazy ISO zostały zaczerpnięte z projektu Android-x86, możemy zainstalować na VirtualBox, VMWare oraz na maszynie rzeczywistym</p>
+                        <h2>Android 9.0</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/71931/android-x86_64-9.0-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/71931/android-x86-9.0-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 8.1</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/69704/android-x86_64-8.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/69704/android-x86-8.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 7.1</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/67834/android-x86_64-7.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/67834/android-x86-7.1-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 6.0</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65890/android-x86_64-6.0-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65890/android-x86-6.0-r3.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 5.1</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65697/android-x86_64-5.1-rc1.img/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 64-bit</button>
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65697/android-x86-5.1-rc1.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 4.4</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65695/android-x86-4.4-r5.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 4.0</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/66419/android-x86-4.0-r1-eeepc.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 2.2</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65698/android-x86-2.2-r2-eeepc.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 1.6</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65699/android-x86-1.6-r2.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2>Android 0.9</h2>
+                        <div class="btn-group btn-group-lg">                
+                            <button onclick="location.href='https://osdn.net/projects/android-x86/downloads/65700/eeepc-v0.9.iso/';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-android"></i> 32-bit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="macOSModal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 512px;">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <p>Aby móc zainstalować macOS na wirtualnej maszynie potrzebujemy: <a href="https://smanky-web.pl/softwares">VMWare Workstation 15 Player</a> oraz <a href="https://github.com/theJaxon/unlocker/archive/master.zip">VMWare Unlocker</a>, uruchamiamy <code>win-install.bat</code> po pierwszym uruchomieniu VMWare Workstation Player. Jeżeli chcesz zainstalować macOS na swoim komputerze, to polecam zapoznać się z tym poradnikiem <a href="https://poradniki.hackintosh-polska.pl/">Hackintosh Polska</a></p>
+                        <h2>macOS Catalina 10.15</h2>
+                            <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS_Catalina_10.15_19A583.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                        <br>
+                        <br>
+                        <h2>macOS Mojave 10.14.1</h2>               
+                            <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS Mojave 10.14 (18A391) [MAS].dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>           
+                        <br>
+                        <br>
+                        <h2>macOS High Sierra 10.13.6</h2>
+                            <button onclick="location.href='http://176.9.47.213/themacgo/macOS.High.Sierra.10.13.6.dmg?md5=HDMfJ7CRMxOuI6JqGh83Mg&expires=1580711426';" class="btn btn-primary"><i class="fab fa-apple"></i> Obraz</button>
+                        <br>
+                        <br>
+                            <h2>macOS Sierra 10.12.4</h2>               
+                            <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/macOS Sierra 10.12.4 [MAS].dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                        <br>
+                        <br>
+                        <h2>macOS El Captain 10.11</h2>              
+                            <button onclick="location.href='http://repos.uclv.edu.cu/isos/MacOS/OS_X_El_Capitan.app.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="share">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Podziel się tą stroną lub zasubskrybuj</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                <div class="modal-body">
+                  <h6>Udostępnij na:</h6>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://reddit.com/submit?url=https://smanky-web.pl/&amp;title=Smanky Web" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="https://twitter.com/share?url=http://smanky-web.pl/&amp;text=Smanky Web&amp;hashtags=zwyczajny-blog" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://www.facebook.com/sharer.php?u=https://smanky-web.pl/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <h6>Zasubskrybuj</h6>
+                    <div id="mc_embed_signup">
+                      <form action="https://smanky-web.us4.list-manage.com/subscribe/post?u=b21072859554a15fd08cad091&amp;id=023f382d05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <div id="mc_embed_signup_scroll">
+                              <div class="indicates-required"><span class="asterisk">*</span> wymagane</div>
+                              <div class="mc-field-group">
+                                <label for="mce-EMAIL">Adres e-mail  <span class="asterisk">*</span></label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                              </div>
+                              <div class="mc-field-group">
+                                <label for="mce-FNAME">Imię </label>
+                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                              </div>
+                            <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b21072859554a15fd08cad091_023f382d05" tabindex="-1" value=""></div>
+                              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                          </div>
+                      </form>
+                  </div>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                  <script type='text/javascript'>
+                  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+                      $.extend($.validator.messages, {
+                          required: "To pole jest wymagane.",
+                          remote: "Proszę o wypełnienie tego pola.",
+                          email: "Proszę o podanie prawidłowego adresu email.",
+                          url: "Proszę o podanie prawidłowego URL.",
+                          date: "Proszę o podanie prawidłowej daty.",
+                          dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+                          number: "Proszę o podanie prawidłowej liczby.",
+                          digits: "Proszę o podanie samych cyfr.",
+                          creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+                          equalTo: "Proszę o podanie tej samej wartości ponownie.",
+                          accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+                          maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+                          minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+                          rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+                          range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+                          max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+                          min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+                  });}(jQuery));
+                  var $mcj = jQuery.noConflict(true);
+                  </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
