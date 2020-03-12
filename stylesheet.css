@@ -1,3 +1,7 @@
+html body {
+    height: 100%;
+}
+
 .carousel-item i {
     font-size: 64px;
 }
@@ -45,13 +49,8 @@
 .col-md-3 {
     padding:16px;
     flex-direction:column;
-    height:100vh;
+    min-height: 100vh;
 }
-    .col-md-3 button {
-        position:absolute;
-        bottom:0px;
-        left:0px;
-    }
 
     .col-md-3 h2 {
         color: white;

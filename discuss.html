@@ -16,7 +16,7 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -24,13 +24,13 @@
         <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
         <!-- OpenGraph -->
         <meta property="og:url" content="https://smanky-web.pl">
-        <meta property="og:title" content="Windows 10 - Smanky Web">
+        <meta property="og:title" content="Smanky Web">
         <meta property="og:description" content="Blog o tematyce technologicznej, zawierający także programy oraz systemy możliwe do zainstalowania na komputerze">
         <meta property="og:image" content="resources/banner.png">        
         <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
         <link rel="icon" href="https://avatars2.githubusercontent.com/u/24720775?s=460&v=4" />
         <!-- Fajne coś -->
-        <title>Windows 10 - Smanky Web</title>
+        <title>Strona główna - Smanky Web</title>
     </head>
 
     <body style="background-color:#D8DBE0;">
@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-md-3 bg-dark">
             <div class="text-center">
-              <img src="/resources/avatar.png">
+              <img src="resources/avatar.png">
               <h2>Smanky Web</h2>
             </div>
             <nav class="navbar">
@@ -63,52 +63,26 @@
             <br><br>
             <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#share">Udostępnij lub zasubskrybuj</button>
           </div>
-          <div class="col" style="margin-top: auto; margin-bottom: auto; padding-top: 32px; padding-bottom: 32px;">
+          <div class="col" style="margin-top: auto; margin-bottom: auto;">
             <div class="align-content-around">
-                <h2 class="card-title">Windows 10</h2>
-                <p class="card-text">Wersja systemu operacyjnego Microsoft Windows, która została wydana 29 lipca 2015 roku</p>
-                <img class="card-img" src="https://i.pcmag.com/imagery/reviews/00ubrZQerDWKrZIvGWe0tjx-64.fit_scale.size_2698x1517.png" />
-                <h3>Wymagania sprzętowe</h3>
-                <table>
-                    <tbody>
-                      <tr> <th> Procesor <td> procesor o częstotliwości 1 GHz lub wyższej albo SoC (System on a Chip)
-                      <tr> <th> Pamięć RAM <td> 1 GB dla wersji 32-bitowej lub 2 GB dla wersji 64-bitowej  
-                      <tr> <th> Miejsce na dysku twardym <td> 16 GB dla 32-bitowego lub 32 GB dla 64-bitowego systemu operacyjnego 
-                      <tr> <th> Karta graficzna <td> biblioteki DirectX 9 lub nowsze ze sterownikiem WDDM 1.0 
-                      <tr> <th> Wyświetlacz <td> 800 x 600 
-                      <tr> <th> Połączenie internetowe <td> Połączenie z Internetem jest niezbędne do przeprowadzenia aktualizacji, pobierania i korzystania z niektórych funkcji. 
-                </table>
-                <br><br>
-                <h3>Aktywacja systemu</h3>
-                <table>
-                    <tbody>
-                      <tr> <th> Windows 10 Home <td> TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
-                      <tr> <th> Windows 10 Home N <td> 3KHY7-WNT83-DGQKR-F7HPR-844BM
-                      <tr> <th> Windows 10 Home Single Language <td> 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDF
-                      <tr> <th> Windows 10 Home Country Specific <td> PVMJN-6DFY6-9CCP6-7BKTT-D3WVR
-                      <tr> <th> Windows 10 Pro <td> W269N-WFGWX-YVC9B-4J6C9-T83GX
-                      <tr> <th> Windows 10 Pro N <td> MH37W-N47XK-V7XM9-C7227-GCQG9
-                      <tr> <th> Windows 10 Education <td> NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
-                      <tr> <th> Windows 10 Education N <td> 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
-                      <tr> <th> Windows 10 Enterprise <td> NPPR9-FWDCX-D2C8J-H872K-2YT43
-                      <tr> <th> Windows 10 Enterprise N <td> DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
-                </table>
-                <br>
-                <h4>Jak aktywować system?</h4>
-                <p>Wystarczą trzy komendy w Wierszu Polecenia. Oczywiście potrzeba uprawnień administratora. Wpisujemy kolejno komendy:</p>
-                <code>slmgr /ipk {KLUCZ} | </code>
-                <code>slmgr /skms kms8.msguides.com | </code>
-                <code>slmgr /ato </code>
-                <br><br>
-                <h3>Pobierz system</h3>
-                <div class="btn-group btn-group-lg">                
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=U2YZ&id=1rU0aAPZvlHT8_RhYxLTmIf9ADv0YDrMg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x64 (November 2019)</button>
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=MGPk&id=1JO2n1b2eL4jDysaueQ7OtC84613nvx07';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x86 (November 2019)</button>
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=ULrH&id=1RoHal8mc3N0pMfuTHpNJjAzw1h0c9gZT';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x64 (May 2019)</button>
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=g-aM&id=1NymEeCqKWN1ysSI5CkeOS9MdxBr1-8cX';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x86 (May 2019)</button>
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=JzKr&id=1zaFdPUyyUElse8UB66svE2KCW01Yu2jN';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x64 (October 2018)</button>
-                    <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=4lgF&id=1TwetRpEuXjGWYNU3jIw6asL88SzUihLX';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> x86 (October 2018)</button>
-                </div>
+              <h3>Publiczna dyskusja</h3>
+              <p>Tutaj możesz napisać o błędzie na stronie, o programie, który musi się znajdować na tej stronie, o poradniku jaki potrzebujesz, który może się okazać bardzo pomocny lub możesz wprost podzielić się z myślami z innymi użytkownikami.</p>
+                <!-- begin wwww.htmlcommentbox.com -->
+                <div id="HCB_comment_box" class="modify"></div>
+                <link rel="stylesheet" type="text/css" href="htmlcommentbox.css" />
+                <script type="text/javascript" id="hcb"> 
+                    if(!window.hcb_user){
+                        hcb_user={};
+                    } 
+                    (function(){
+                        var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";
+                        s.setAttribute("type","text/javascript");
+                        s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24uznMjYSYRLtDJvO.OMGyx%2F"+"&opts=16862&num=10&ts=1581156687255");
+                        if (typeof s!="undefined") 
+                            document.getElementsByTagName("head")[0].appendChild(s);
+                        }
+                        )(); /*-->*/ </script>
+                <!-- end www.htmlcommentbox.com -->  
             </div>
           </div>
         </div>
