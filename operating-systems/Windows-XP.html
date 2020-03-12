@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158659914-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-158659914-1');
+        </script>
+        <!-- Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+        <!-- OpenGraph -->
+        <meta property="og:url" content="https://smanky-web.pl">
+        <meta property="og:title" content="Windows 7 - Smanky Web">
+        <meta property="og:description" content="Blog o tematyce technologicznej, zawierający także programy oraz systemy możliwe do zainstalowania na komputerze">
+        <meta property="og:image" content="resources/banner.png">        
+        <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/24720775?s=460&v=4" />
+        <!-- Fajne coś -->
+        <title>Windows 7 - Smanky Web</title>
+    </head>
+
+    <body style="background-color:#D8DBE0;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 bg-dark">
+            <div class="text-center">
+              <img src="/resources/avatar.png">
+              <h2>Smanky Web</h2>
+            </div>
+            <nav class="navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/softwares.html">Programy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/operating-systems.html">Systemy operacyjne</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tutorials.html">Jak zrobić...</a>
+                </li>
+              </ul>
+            </nav>
+            <br><br>
+            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#share">Udostępnij lub zasubskrybuj</button>
+          </div>
+          <div class="col" style="margin-top: auto; margin-bottom: auto; padding-top: 32px; padding-bottom: 32px;">
+            <div class="align-content-around">
+                <h2 class="card-title">Windows XP</h2>
+                            <p class="card-text">Wersja systemu operacyjnego Microsoft Windows z rodziny Windows NT (oparty na jądrze NT) firmy Microsoft, wydana 25 października 2001 roku. Jednocześnie w tym dniu wydano Windows Media Player dla Windows XP</p>
+                            <img class="card-img" src="https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2019/01/windows-xp-historia-4.jpg" />
+                            <h3>Wymagania sprzętowe</h3>
+                            <table>
+                                <tbody>
+                                  <tr> <th> Procesor <td> procesor o częstotliwości 300 MHz lub wyższej
+                                  <tr> <th> Pamięć RAM <td> 128 MB
+                                  <tr> <th> Miejsce na dysku twardym <td> 2 GB
+                                  <tr> <th> Karta graficzna <td> Adapter wideo i monitor o wyższej rozdzielczości
+                                  <tr> <th> Wyświetlacz <td> 800 x 600 
+                                  <tr> <th> Połączenie internetowe <td> Połączenie z Internetem jest niezbędne do przeprowadzenia aktualizacji, pobierania i korzystania z niektórych funkcji. 
+                            </table>
+                            <br><br>
+                            <h3>Aktywacja systemu</h3>
+                            <p>Aby aktywować tutaj system, potrzebujemy notatnika. Do notatnika dodajemy ten oto Klucz rejestru:</p>
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#regedit">Pokaż klucz rejestru</button>
+                            <div id="regedit" class="collapse"><code>
+                                Windows Registry Editor Version 5.00
+                                <br><br>
+                                [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion]<br>
+                                "CurrentBuild"="1.511.1 () (Obsolete data - do not use)"<br>
+                                "ProductId"="55274-640-7450093-23464"<br>
+                                "DigitalProductId"=hex:a4,00,00,00,03,00,00,00,35, 35,32,37,34,2d,36,34,30,2d,\<br>
+                                37,34,35,30,30,39,33,2d,32,33,34,36,34,00,2e,00,00 ,00,41,32,32,2d,30,30,30,\<br>
+                                30,31,00,00,00,00,00,00,00,62,fc,61,4c,e0,26,33,16 ,05,d3,54,e7,a0,de,00,00,\<br>
+                                00,00,00,00,49,36,c2,49,20,47,0c,00,00,00,00,00,00 ,00,00,00,00,00,00,00,00,\<br>
+                                00,00,00,00,00,00,00,00,00,00,00,33,33,35,30,30,00 ,00,00,00,00,00,00,65,10,\<br>
+                                00,00,74,99,dd,b0,f7,07,00,00,98,10,00,00,00,00,00 ,00,00,00,00,00,00,00,00,\<br>
+                                00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00 ,c4,ae,d6,1c<br>
+                                "LicenseInfo"=hex:e7,77,18,19,f8,08,fc,7d,e8,f0,df ,12,6e,46,cb,3f,ad,b2,dd,b9,\<br>
+                                15,18,16,c0,bc,c3,6a,7d,4a,80,8b,31,13,37,5a,78,a2 ,06,c8,6b,b9,d9,dd,cc,6a,\<br>
+                                9c,c5,9b,77,aa,07,8d,56,6a,7c,e4<br>
+                                <br><br>
+                                [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows<br>
+                                NT\CurrentVersion\WPAEvents]<br>
+                                "OOBETimer"=hex:ff,d5,71,d6,8b,6a,8d,6f,d5,33,93,fd
+                            </code></div>
+                            <br><br>
+                            <p>Zapisujemy plik w rozszerzeniu .reg, przykładowo: <code>Aktywacja.reg</code>. Na sam koniec otwieramy utworzony plik i uruchamiamy ponownie system.</p>
+                            <br><br>
+                            <h3>Pobierz system</h3><div class="btn-group btn-group-lg">                
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=12_H&id=0B8Dyz0SssKO-SEM2ZWlXRFJ5Zms';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Professional SP2</button>
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=Pk-l&id=0B8Dyz0SssKO-alI1Y1VUYm5KVm8';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Professional</button>
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=O0ug&id=0Bx3SCkHWvr1Rdkg4MEVrS0tfVEU';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Home Edition SP3</button>
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=0fr5&id=0B8Dyz0SssKO-RUFhOE9vLVBZMVU';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Home Edition SP2</button>
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=8brY&id=0B8Dyz0SssKO-eXlHcmh2ek5pbjA';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> Home Edition</button>    
+                                <button onclick="location.href='https://drive.google.com/uc?export=download&confirm=In1p&id=0B-RzT-j625xDWUhBVUtVOUM2ZTg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-windows"></i> SP1</button>    
+                            </div>
+            </div>
+          </div>
+        </div>
+      </div>       
+      <div class="modal fade" id="share">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Podziel się tą stroną lub zasubskrybuj</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                <div class="modal-body">
+                  <h6>Udostępnij na:</h6>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://reddit.com/submit?url=https://smanky-web.pl/&amp;title=Smanky Web" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="https://twitter.com/share?url=http://smanky-web.pl/&amp;text=Smanky Web&amp;hashtags=zwyczajny-blog" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://www.facebook.com/sharer.php?u=https://smanky-web.pl/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <h6>Zasubskrybuj</h6>
+                    <div id="mc_embed_signup">
+                      <form action="https://smanky-web.us4.list-manage.com/subscribe/post?u=b21072859554a15fd08cad091&amp;id=023f382d05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <div id="mc_embed_signup_scroll">
+                              <div class="indicates-required"><span class="asterisk">*</span> wymagane</div>
+                              <div class="mc-field-group">
+                                <label for="mce-EMAIL">Adres e-mail  <span class="asterisk">*</span></label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                              </div>
+                              <div class="mc-field-group">
+                                <label for="mce-FNAME">Imię </label>
+                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                              </div>
+                            <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b21072859554a15fd08cad091_023f382d05" tabindex="-1" value=""></div>
+                              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                          </div>
+                      </form>
+                  </div>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                  <script type='text/javascript'>
+                  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+                      $.extend($.validator.messages, {
+                          required: "To pole jest wymagane.",
+                          remote: "Proszę o wypełnienie tego pola.",
+                          email: "Proszę o podanie prawidłowego adresu email.",
+                          url: "Proszę o podanie prawidłowego URL.",
+                          date: "Proszę o podanie prawidłowej daty.",
+                          dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+                          number: "Proszę o podanie prawidłowej liczby.",
+                          digits: "Proszę o podanie samych cyfr.",
+                          creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+                          equalTo: "Proszę o podanie tej samej wartości ponownie.",
+                          accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+                          maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+                          minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+                          rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+                          range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+                          max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+                          min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+                  });}(jQuery));
+                  var $mcj = jQuery.noConflict(true);
+                  </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

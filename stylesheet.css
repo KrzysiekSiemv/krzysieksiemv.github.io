@@ -59,9 +59,22 @@
 
     .col-md-3 img {
         border-radius: 50%;
+        width: calc(100% - 24%);
     }
 
 .ceneoaff-container .ceneoaff-custom {
     margin-left: auto;
     margin-right: auto;
 }
+
+.col {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 32px 16px;
+}
+
+    .col img {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
