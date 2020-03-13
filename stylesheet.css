@@ -1,5 +1,20 @@
 html body {
     height: 100%;
+    background-color: #1f1c1c;
+    color: #f3f3f3;
+}
+
+.modal-dialog {
+    color:black;
+}
+
+.btn-primary {
+    background-color: #d49a41;
+    border: #d49a41;
+}
+
+.btn-link, .nav-link {
+    color: #d49a41;
 }
 
 .carousel-item i {
@@ -8,11 +23,16 @@ html body {
 
 .col-sm-4 {
     display: none;
+    margin-top: 16px;
 }
+
+    .col-sm-4 .card {
+        border-color: #823f03;
+    }
 
     .col-sm-4 .card-body {
         min-height: 380px;
-        background-color: #D8DBE0;
+        background-color: #1f1c1c;
         margin-bottom: 16px;
     }
 
