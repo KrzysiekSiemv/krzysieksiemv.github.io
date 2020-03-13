@@ -4,9 +4,15 @@ html body {
     color: #f3f3f3;
 }
 
-.modal-dialog {
-    color:black;
+.modal-content {
+    background-color: #374855;
+    color: #f3f3f3;
+    width: 640px;
 }
+
+    .modal-header button {
+        color: white;
+    }
 
 .btn-primary {
     background-color: #d49a41;
@@ -61,7 +67,8 @@ html body {
 }       
 
 #mc_embed_signup {
-    background: #fff; 
+    background-color: #1f1c1c;
+    color: white;
     clear: left; 
     font: 14px Helvetica,Arial,sans-serif; 
 }
