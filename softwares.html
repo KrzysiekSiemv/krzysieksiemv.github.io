@@ -719,12 +719,20 @@
                 <button class="btn btn-primary btn-block" data-target="#VLCModal" data-toggle="modal">Pobierz</button>
                 </div></div></div>
 
-                <div class="col-sm-4 narzedzia windows linux"><div class="card"><div class="card-body"><!-- VMWare Workstation Player -->
+                <div class="col-sm-4 narzedzia windows linux" id="vmware"><div class="card"><div class="card-body"><!-- VMWare Workstation Player -->
                 <img src="resources/softwares/icons/VMWare.png" /> 
                 <h4 class="card-title">VMWare Workstation 15 Player</h2> 
                 <p class="card-text">Narzędzie do wirtualizacji maszyn</p>
                 
                 <button class="btn btn-primary btn-block" data-target="#VMWareModal" data-toggle="modal">Pobierz</button>
+                </div></div></div>
+
+                <div class="col-sm-4 narzedzia windows linux" id="vmware"><div class="card"><div class="card-body"><!-- VMWare Workstation Player -->
+                <img src="resources/softwares/icons/VMWare.png" /> 
+                <h4 class="card-title">VMWare Workstation 15 Pro</h2> 
+                <p class="card-text">Narzędzie do wirtualizacji maszyn</p>
+                
+                <button class="btn btn-primary btn-block" data-target="#VMWareProModal" data-toggle="modal">Pobierz</button>
                 </div></div></div>
 
                 <a id="W"></a>
@@ -735,6 +743,14 @@
                 <p class="card-text">Słynny odtwarzacz muzyki, który kiedyś znajdował się na każdym komputerze</p>
                 
                 <button class="btn btn-primary btn-block" data-target="#WinampModal" data-toggle="modal">Pobierz</button>
+                </div></div></div>
+
+                <div class="col-sm-4 multimedia windows" id="WindowsLoader"><div class="card"><div class="card-body"><!-- Winamp -->
+                <img src="resources/softwares/icons/WindowsLoader.png" /> 
+                <h4 class="card-title">Windows Loader by DAz</h2> 
+                <p class="card-text">Aktywator systemów Windows 7 oraz Windows Vista</p>
+                
+                <button class="btn btn-primary btn-block" data-target="#WindowsLoaderModal" data-toggle="modal">Pobierz</button>
                 </div></div></div>
 
                 <div class="col-sm-4 narzedzia windows"><div class="card"><div class="card-body"><!-- WinRAR -->
@@ -1647,10 +1663,10 @@
                                       <nav class="navbar navbar-expand-md justify-content-center">
                                           <ul class="navbar-nav">
                                               <li class="nav-item">
-                                                  <a class="nav-link" href="https://smanky-web.pl/softwares/ProPlus-64bit.exe" download><i class="fab fa-windows"></i> Professional Plus (64-bit)</a>
+                                                  <a class="nav-link" href="https://mega.nz/#!Zf5gHCqL!4_7lPYZoaMJOKvmUycih4vp09r57BOpQDs8oF0dY63I" download><i class="fab fa-windows"></i> Professional Plus (64-bit)</a>
                                               </li>
                                               <li class="nav-item">
-                                                  <a class="nav-link" href="https://smanky-web.pl/softwares/ProPlus-32bit.exe" download><i class="fab fa-windows"></i> Professional Plus (32-bit)</a>
+                                                  <a class="nav-link" href="https://mega.nz/#!lG4UQYjJ!MRC1VauAW6AnBjtVbSX1uhXZ1cQu34DJbRjXzyowCIg" download><i class="fab fa-windows"></i> Professional Plus (32-bit)</a>
                                               </li>
                                           </ul>
                                       </nav>	
@@ -1798,7 +1814,7 @@
                         <nav class="navbar navbar-expand-md justify-content-center">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://smanky-web.pl/softwares/MicrosoftToolkit.rar" download><i class="fab fa-windows"></i> Windows</a>
+                                    <a class="nav-link" href="https://mega.nz/#!hDoWgKga!6s9cuScU1-l7hH4C50Ry3xG0QzrpXKkVNYrayWG6X0w" download><i class="fab fa-windows"></i> Windows</a>
                                 </li>
                             </ul>
                         </nav>	
@@ -2602,6 +2618,27 @@
                 
             </div>
         </div>
+        <div class="modal fade" id="VMWareProModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz system</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <p>Klucz do programu: FU512-2DG1H-M85QZ-U7Z5T-PY8ZD</p>
+                        <nav class="navbar navbar-expand-md justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.vmware.com/go/getworkstation-win"><i class="fab fa-windows"></i> Windows</a>
+                                </li>
+                                <li class="nav-item">                                
+                                    <a class="nav-link" href="https://www.vmware.com/go/getworkstation-linux"><i class="fab fa-linux"></i> Linux</a>
+                                </li>
+                            </ul>
+                        </nav>		    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         <div class="modal fade" id="WinampModal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -2611,6 +2648,23 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="https://download.nullsoft.com/winamp/client/winamp58_3660_beta_full_en-us.exe"><i class="fab fa-windows"></i> Windows</a>
+                                </li>
+                            </ul>
+                        </nav>		    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal fade" id="WindowsLoaderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz system</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <nav class="navbar navbar-expand-md justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://mega.nz/#!dahT1ASL!kvFF6GMX2ZDcPMegiElyXa44ID2g1fq5yVgzhKW5vaM"><i class="fab fa-windows"></i> Windows</a>
                                 </li>
                             </ul>
                         </nav>		    
