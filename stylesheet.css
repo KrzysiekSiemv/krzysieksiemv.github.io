@@ -42,7 +42,7 @@ html body {
         margin-bottom: 16px;
     }
 
-    .col-sm-4 button, .col-sm-4 a {
+    .col-sm-4 button, .col-sm-4 a, .col-md-3 button {
         position: absolute;
         bottom: 8px;
         width: 70%;
@@ -84,6 +84,13 @@ html body {
     flex-direction:column;
     min-height: 100vh;
 }
+
+    .col-md-3 nav {
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        right: 15%;
+    }
 
     .col-md-3 h2 {
         color: white;
