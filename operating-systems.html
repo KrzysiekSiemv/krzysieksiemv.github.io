@@ -68,7 +68,7 @@
               <h1 style="border-bottom: 2px solid black; padding-bottom: 5px;">WYBIERZ SYSTEM, JAKI CHCESZ</h1>
               <br><br>
               <h2 style="border-bottom: 2px solid black; padding-bottom: 5px;">Microsoft</h1>
-              <div class="row"> 
+                <div class="row"> <!-- Microsoft -->
                   <div class="col-sm-4 text-center" style="display:block"><div class="card"><div class="card-body">
                     <h2 class="card-title">Windows</h2>
                     <i style="font-size:64px" class="fab fa-windows"></i>
@@ -90,12 +90,24 @@
                 </div>
                 <br><br>
                 <h2 style="border-bottom: 2px solid black; padding-bottom: 5px;">Apple</h1>
-                <div class="row">
+                <div class="row"> <!-- Apple -->
                   <div class="col-sm-4 text-center" style="display:block"><div class="card"><div class="card-body">
                     <h2 class="card-title">macOS</h2>
                     <i style="font-size:64px" class="fab fa-apple"></i>
                     <p class="card-text">Rodzina uniksowych systemów operacyjnych produkowanych i rozprowadzanych przez Apple Inc. dostępnych oficjalnie jedynie dla komputerów Macintosh </p>
                     <button class="btn btn-primary btn-block" data-target="#macOSModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div></div></div>
+                  <div class="col-sm-4 text-center" style="display:block"><div class="card"><div class="card-body">
+                    <h2 class="card-title">OS X</h2>
+                    <i style="font-size:64px" class="fab fa-apple"></i>
+                    <p class="card-text">Starsze systemy operacyjne Apple</p>
+                    <button class="btn btn-primary btn-block" data-target="#OSXModal" data-toggle="modal">Pokaż wersje systemów</button>
+                  </div></div></div>
+                  <div class="col-sm-4 text-center" style="display:block"><div class="card"><div class="card-body">
+                    <h2 class="card-title">Mac OS X</h2>
+                    <i style="font-size:64px" class="fab fa-apple"></i>
+                    <p class="card-text">Jeszcze starsze systemy operacyjne Apple instalowane na pierwszych Macintoshach</p>
+                    <button class="btn btn-primary btn-block" data-target="#MacOSXModal" data-toggle="modal">Pokaż wersje systemów</button>
                   </div></div></div>
                 </div>
                 <br><br>
@@ -803,6 +815,15 @@
                             <button onclick="location.href='https://soft.uclv.edu.cu/isos/MacOS/macOS Sierra 10.12.4 [MAS].dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
                         <br>
                         <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="OSXModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
                         <h2>OS X El Captain 10.11</h2>              
                             <button onclick="location.href='https://soft.uclv.edu.cu/isos/MacOS/OS_X_El_Capitan.app.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
                         <br>
@@ -815,6 +836,16 @@
                             <button onclick="location.href='https://soft.uclv.edu.cu/isos/MacOS/OS%20X%20Mavericks%20Install%20DVD.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
                         <br>
                         <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="MacOSXModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><h4 class="modal-title">Wybierz wersję systemu</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
                         <h2>Mac OS X Lion 10.7</h2>              
                             <button onclick="location.href='https://soft.uclv.edu.cu/isos/MacOS/Mac%20OS%20X%20Lion.dmg';" class="btn btn-primary" style="text-decoration: none;"><i class="fab fa-apple"></i> Obraz</button>
                         <br>
