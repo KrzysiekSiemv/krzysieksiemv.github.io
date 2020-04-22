@@ -42,10 +42,12 @@ html body {
         margin-bottom: 16px;
     }
 
-    .col-sm-4 button {
+    .col-sm-4 button, .col-sm-4 a {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 8px;
+        width: 70%;
+        left: 15%;
+        right: 15%;
     }
 
     .col-sm-4 img {
@@ -71,6 +73,10 @@ html body {
     color: white;
     clear: left; 
     font: 14px Helvetica,Arial,sans-serif; 
+}
+
+.card {
+    background-color: #1f1c1c;
 }
 
 .col-md-3 {
