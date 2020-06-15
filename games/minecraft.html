@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158659914-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-158659914-1');
+        </script>
+        <!-- Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraft" type="text/css"/> 
+        <link rel="stylesheet" href="https://krzysieksiemv.github.io/stylesheet.css" type="text/css">
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+        <!-- OpenGraph -->
+        <meta property="og:url" content="https://smanky-web.pl">
+        <meta property="og:title" content="Strefa Minecraft - Smanky Web">
+        <meta property="og:description" content="Blog o tematyce technologicznej, zawierający także programy oraz systemy możliwe do zainstalowania na komputerze">
+        <meta property="og:image" content="resources/banner.png">        
+        <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/24720775?s=460&v=4" />
+        <!-- Fajne coś -->
+        <title>Strefa Minecraft - Smanky Web</title>
+    </head>
+
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 bg-dark">
+            <div class="text-center">
+              <img src="https://krzysieksiemv.github.io/resources/avatar.png">
+              <h2>Smanky Web</h2>
+            </div>
+            <nav class="navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/softwares.html">Programy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/operating-systems.html">Systemy operacyjne</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tutorials.html">Jak zrobić...</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/discuss.html">Publiczna dyskusja</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/games.html">Gry</a>
+                </li>
+              </ul>
+            </nav>
+            <br><br>
+            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#share">Udostępnij lub zasubskrybuj</button>
+            
+          </div>
+          <div class="col" style="margin-top: auto; margin-bottom: auto; font-family: 'MinecrafterAltRegular';">
+            <div class="align-content-around">
+                <h3 class="display-4" style="border-bottom: 2px solid black; padding-bottom: 5px; margin-bottom: 32px;"><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="64px"/> Strefa Minecraft</h3>
+                <h5>Wybierz Wersje Minecraft'a, aby zaczac pobieranie lub przejsc dalej</h5>
+                <div class="row">                    
+                    <div class="col-md-4 text-center" style="display:block">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-center">Stabilna</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.15.2</h2>
+                                        <p>17.01.2020</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.15.1</h2>
+                                        <p>16.12.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.15</h2>
+                                        <p>09.12.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.14.4</h2>
+                                        <p>19.07.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.14.3</h2>
+                                        <p>24.06.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.14.2</h2>
+                                        <p>27.05.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.14.1</h2>
+                                        <p>13.05.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.14</h2>
+                                        <p>23.04.2019</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.13.2</h2>
+                                        <p>22.10.2018</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.13.1</h2>
+                                        <p>22.08.2018</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.13</h2>
+                                        <p>18.07.2018</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.12.2</h2>
+                                        <p>18.09.2017</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.12.1</h2>
+                                        <p>03.08.2017</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.12</h2>
+                                        <p>02.06.2017</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.11.2</h2>
+                                        <p>21.12.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.11.1</h2>
+                                        <p>20.12.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.11</h2>
+                                        <p>14.11.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.10.2</h2>
+                                        <p>23.06.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.10.1</h2>
+                                        <p>22.06.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.10</h2>
+                                        <p>08.06.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.9.4</h2>
+                                        <p>10.05.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.9.3</h2>
+                                        <p>10.05.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.9.2</h2>
+                                        <p>30.03.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.9.1</h2>
+                                        <p>30.03.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.9</h2>
+                                        <p>29.02.2016</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.9</h2>
+                                        <p>03.12.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.8</h2>
+                                        <p>27.07.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.7</h2>
+                                        <p>05.06.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.6</h2>
+                                        <p>25.05.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.5</h2>
+                                        <p>22.05.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.4</h2>
+                                        <p>17.04.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.3</h2>
+                                        <p>19.02.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.2</h2>
+                                        <p>19.02.2015</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                    <div>
+                                        <h2><img src="https://krzysieksiemv.github.io/resources/softwares/icons/Minecraft.svg" height="36px" width="36px"/> 1.8.1</h2>
+                                        <p>24.11.2014</p>
+                                        <div class="btn-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Serwer</button>
+                                                <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">Vanilla</a>
+                                                  <a class="dropdown-item" href="#">Forge</a>
+                                                  <a class="dropdown-item" href="#">Bukkit</a>
+                                                </div>
+                                              </div>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center" style="display:block">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-center">Snapshot</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h2><img src="file:///G:/Projekty/GitHub/krzysieksiemv.github.io/resources/games/icons/crafting-table.png" height="36px" width="36px"/> 20w19a</h2>
+                                        <p>06.05.2020</p>
+                                        <div class="btn-group">
+                                            <a class="btn btn-primary" href="">Serwer</a>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center" style="display:block">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-center">Alfa/Beta</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h2><img src="file:///G:/Projekty/GitHub/krzysieksiemv.github.io/resources/games/icons/cobblestone.png" height="36px" width="36px"/> b 1.8.1</h2>
+                                        <p>18.09.2011</p>
+                                        <div class="btn-group">
+                                            <a class="btn btn-primary" href="">Serwer</a>
+                                            <a class="btn btn-primary" href="">Klient</a>
+                                        </div>
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>       
+      <div class="modal fade" id="share">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"><h4 class="modal-title">Podziel się tą stroną lub zasubskrybuj</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                <div class="modal-body">
+                  <h6>Udostępnij na:</h6>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://reddit.com/submit?url=https://smanky-web.pl/&amp;title=Smanky Web" target="_blank"><i class="fab fa-reddit-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="https://twitter.com/share?url=http://smanky-web.pl/&amp;text=Smanky Web&amp;hashtags=zwyczajny-blog" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a class="btn btn-link" style="font-size: 32px" href="http://www.facebook.com/sharer.php?u=https://smanky-web.pl/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <h6>Zasubskrybuj</h6>
+                    <div id="mc_embed_signup">
+                      <form action="https://smanky-web.us4.list-manage.com/subscribe/post?u=b21072859554a15fd08cad091&amp;id=023f382d05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <div id="mc_embed_signup_scroll">
+                              <div class="indicates-required"><span class="asterisk">*</span> wymagane</div>
+                              <div class="mc-field-group">
+                                <label for="mce-EMAIL">Adres e-mail  <span class="asterisk">*</span></label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                              </div>
+                              <div class="mc-field-group">
+                                <label for="mce-FNAME">Imię </label>
+                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                              </div>
+                            <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b21072859554a15fd08cad091_023f382d05" tabindex="-1" value=""></div>
+                              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                          </div>
+                      </form>
+                  </div>
+                  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                  <script type='text/javascript'>
+                  (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+                      $.extend($.validator.messages, {
+                          required: "To pole jest wymagane.",
+                          remote: "Proszę o wypełnienie tego pola.",
+                          email: "Proszę o podanie prawidłowego adresu email.",
+                          url: "Proszę o podanie prawidłowego URL.",
+                          date: "Proszę o podanie prawidłowej daty.",
+                          dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+                          number: "Proszę o podanie prawidłowej liczby.",
+                          digits: "Proszę o podanie samych cyfr.",
+                          creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+                          equalTo: "Proszę o podanie tej samej wartości ponownie.",
+                          accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+                          maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+                          minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+                          rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+                          range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+                          max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+                          min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+                  });}(jQuery));
+                  var $mcj = jQuery.noConflict(true);
+                  </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
