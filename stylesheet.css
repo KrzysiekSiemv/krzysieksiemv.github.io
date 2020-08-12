@@ -1,0 +1,97 @@
+a {
+    text-decoration: none;
+}
+    
+.collapse a {
+    margin: 0px 16px;
+}
+
+.languageLink {
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.footer {
+    transition: background-color 0.5s ease;
+    padding: 8px;
+    background-color: rgb(220, 220, 220);
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+body {
+    transition: background-color 0.5s ease;
+    background-color: white;
+}
+
+.btn-group {
+    margin-bottom: 6px;
+}
+
+.menu {
+    padding: 4px;
+    margin: 16px;
+    border-radius: 16px;
+    background-color: rgb(220, 220, 220);
+    text-decoration: none;
+    color: black;
+}
+
+    .menu a:hover {
+        text-decoration: overline;
+    }
+
+.col {
+    color: black;
+}
+
+.modal-content {
+    transition: background-color 0.5s ease;
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    transition: background-color 0.5s ease;
+    background-color: rgb(10, 10, 10);
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode .footer {
+    transition: background-color 0.5s ease;
+    background-color: rgb(30, 30, 30);
+    padding: 8px;
+    color: white;
+}
+
+.dark-mode .menu {
+    padding: 4px;
+    margin: 16px;
+    background-color: rgb(30, 30, 30);
+    text-decoration: none;
+    color: white;
+}
+
+.dark-mode .col {
+    color: white;
+}
+
+.dark-mode .modal-content {    
+    transition: background-color 0.5s ease;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.dark-mode .card {
+    transition: backgroud-color 0.5s ease;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}

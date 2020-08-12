@@ -18,7 +18,7 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="/stylesheet.css" type="text/css">
         
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
 
         <!-- OpenGraph -->
         <meta property="og:url" content="https://krzysieksiemv.github.io">
-        <meta property="og:title" content="KrzysiekSiemv.github">
+        <meta property="og:title" content="Raspberry Pi Imager - KrzysiekSiemv.github">
         <meta property="og:description" content="Oprogramowanie, jakie potrzebujesz">
         <meta property="og:image" content="resources/banner.png">        
         <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
@@ -38,88 +38,45 @@
         </style>
 
         <!-- Fajne coś -->
-        <title>Strona główna - krzysieksiemv</title>
+        <title>Raspberry Pi Imager - krzysieksiemv</title>
     </head>
 
     <body>
-        <div class="container text-center" style="margin-top:20%">
-            <div class="btn-group btn-group-lg" id="list">
-                <a class="btn btn-primary" data-toggle="collapse" href="#windows">Windows</a>
-                <a class="btn btn-primary" data-toggle="collapse" href="#windowsserver">Windows Server</a>
-            </div>
-            <div class="btn-group btn-group-lg" id="list">
-                <a class="btn btn-primary" data-toggle="collapse" href="#macOS">macOS</a>
-            </div>
-            <div class="btn-group btn-group-lg" id="list">
-                <a class="btn btn-primary" data-toggle="collapse" href="#linux">Linux</a>
-                <a class="btn btn-primary" data-toggle="collapse" href="#raspberrypi">Raspberry Pi</a>
-                <a class="btn btn-primary" data-toggle="collapse" href="#tools">Tools</a>
-            </div>
-            
-            <div id="options">
-                <div id="windows" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/windows/10.html">Windows 10</a>
-                        <a href="/windows/8.1.html">Windows 8.1</a>
-                        <a href="/windows/8.html">Windows 8</a>
-                        <a href="/windows/7.html">Windows 7</a>
-                        <a href="/windows/vista.html">Windows Vista</a>
-                        <a href="/windows/xp.html">Windows XP</a>
-                        <a href="/windows/older.html">Older</a>
-                        <a href="/windows/ms-dos.html">MS-DOS</a>
+        <div class="container" style="margin-top: 8px">
+            <a href="/"><i class="fas fa-arrow-left"></i> Wróć do strony głównej</a>
+
+            <!--Page-->
+            <div class="row" style="margin-top: 10%">
+                <div class="col">
+                    <h2 class="display-4"><img src="/resources/tools/icons/raspberry-pi.png" height="60px"/> Raspberry Pi Imager</h2>
+                    <p>Raspberry Pi Imager jest to narzędzie pozwalające w łatwy sposób zainstalować <a href="/raspberry-pi/raspberry-pi-os.html">Raspberry Pi OS</a> na karcie SD, dzięki czemu szybciej Raspberry Pi będzie gotowe do użycia</p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#download">Pobierz (1.4)</a>
                     </div>
+                    <i class="fab fa-windows" style="margin-left: 16px;"></i><i class="fab fa-apple"style="margin-left: 8px;"></i><i class="fab fa-ubuntu" style="margin-left: 8px;"></i>
                 </div>
-                <div id="windowsserver" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/windows-server/2019.html">Windows Server 2019</a>
-                        <a href="/windows-server/2016.html">Windows Server 2016</a>
-                        <a href="/windows-server/2012.html">Windows Server 2012</a>
-                        <a href="/windows-server/2008.html">Windows Server 2008</a>
-                        <a href="/windows-server/2003.html">Windows Server 2003</a>
-                    </div>
-                </div>
-                <div id="macOS" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/macos/catalina.html">Catalina 10.15</a>
-                        <a href="/macos/mojave.html">Mojave 10.14.6</a>
-                        <a href="/macos/high-sierra.html">High Sierra 10.13.6</a>
-                        <a href="/macos/sierra.html">Sierra 10.12.6</a>
-                    </div>
-                </div>
-                <div id="linux" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/linux/android.html">Android-x86</a>
-                        <a href="/linux/arch-linux.html">Arch Linux</a>
-                        <a href="/linux/debian.html">Debian</a>
-                        <a href="/linux/deepin.html">Deepin</a>
-                        <a href="/linux/fedora.html">Fedora</a>
-                        <a href="/linux/kali-linux.html">Kali Linux</a>
-                        <a href="/linux/linux-mint.html">Linux Mint</a>
-                        <a href="/linux/manjaro.html">Manjaro</a>
-                        <a href="/linux/mx-linux.html">MX Linux</a>
-                        <a href="/linux/opensuse.html">openSUSE</a>
-                        <a href="/linux/popos.html">Pop!_OS</a>
-                        <a href="/linux/ubuntu.html">Ubuntu</a>
-                    </div>
-                </div>
-                <div id="raspberrypi" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/raspberry-pi/noobs.html">NOOBS</a>
-                        <a href="/raspberry-pi/raspberry-pi-os.html">Raspberry Pi OS</a>                  
-                    </div>
-                </div>
-                <div id="tools" class="collapse" data-parent="#options">
-                    <div class="menu">
-                        <a href="/tools/rufus.html">Rufus (Windows)</a>
-                        <a href="/tools/etcher.html">Etcher (any OS)</a>
-                        <a href="/tools/raspberry-pi-imager.html">Raspberry Pi Imager (Windows, macOS, Ubuntu)</a>
-                        <a href="/tools/virtualbox.html">VirtualBOX (any OS)</a>                        
-                        <a href="/tools/vmware.html">VMWare (Windows, Linux)</a>                        
-                    </div>
+                <div class="col text-center">
+                    <img src="/resources/tools/raspberry-pi-imager.png" width="100%">
                 </div>
             </div>
 
-            <h2 class="display-4">krzysieksiemv.github</h2>
+            <!--Download-->
+            <div class="modal" id="download"><div class="modal-dialog"><div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Pobierz</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+              
+                        <div class="modal-body">
+                            <div class="btn-group">
+                                <a class="btn btn-primary" href="https://downloads.raspberrypi.org/imager/imager_1.4.exe">Windows</a>
+                                <a class="btn btn-primary" href="https://downloads.raspberrypi.org/imager/imager_1.4.dmg">macOS</a>
+                                <a class="btn btn-primary" href="https://downloads.raspberrypi.org/imager/imager_1.4_amd64.deb">Ubuntu</a>
+                            </div>
+                        </div>
+                
+            </div></div></div>
 
             <!--Cookies Information-->
             <div class="toast" data-autohide="false" style="position: absolute; right: 8px; bottom: 32px;">
