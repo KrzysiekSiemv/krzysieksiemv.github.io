@@ -44,7 +44,7 @@ body {
         text-decoration: overline;
     }
 
-.col {
+.col-md-6 {
     color: black;
 }
 
@@ -80,7 +80,7 @@ body.dark-mode {
     color: white;
 }
 
-.dark-mode .col {
+.dark-mode .col-md-6 {
     color: white;
 }
 
