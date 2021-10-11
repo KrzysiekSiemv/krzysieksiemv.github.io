@@ -1,45 +1,69 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pl">
     <head>
-        <!-- Scripts and Stylesheets -->
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <script src="/bootstrap/js/jquery.min.js"></script>
-        <script src="/bootstrap/js/popper.min.js"></script>
-
-        <!-- Metas -->
-        <meta charset="utf-8">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
-        
+        <meta charset="UTF-8" />
+        <meta name="description" content="I Moved Out!" />
+        <meta name="author" content="Krzysztof Smaga" />
         <meta property="og:title" content="krzysieksiemv.github">
         <meta property="og:url" content="https://krzysieksiemv.github.io">
+        
+        <title>I Moved Out!</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/24720775?v=4" />
+        <style>
+            * {
+                margin: 0px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
 
-        <!-- Other -->
-        <title>krzysieksiemv.github</title>
+            body {
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            li {
+                color: white;
+                padding: 7px 8px;
+                margin-top: 4px;
+            }
+
+            a {
+                padding: 7px 8px;
+                border-radius: 8px;
+                width: 64px !important;
+                text-decoration: none;
+                color: white;
+            }
+
+                a:hover {
+                background-color: #28a745;
+                }
+        </style>
     </head>
-
     <body>
-        <div class="container text-center">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <h4>Hey! I moved out!</h4>
-            <p>I moved every website to my own server. (every website is only in Polish)</p>
-            <div class="btn-group">
-                <button class="btn btn-success" onclick="location.href='https://os.siemv.pl';">os.siemv (Operating Systems)</button>
-                <button class="btn btn-success" onclick="location.href='https://tools.siemv.pl';">tools.siemv (Tools)</button>
-                <button class="btn btn-success" onclick="location.href='https://siemv.pl';">siemv.pl (Portfolio)</button>
-                <button class="btn btn-success" onclick="location.href='https://school.siemv.pl';">school.siemv (School Tasks)</button>
-                <button class="btn btn-success" onclick="location.href='https://file.siemv.pl';">files.siemv (Public Files)</button>
-                <button class="btn btn-success" onclick="location.href='https://search.siemv.pl';">search.siemv Homepage)</button>
-                <button class="btn btn-success" onclick="location.href='https://minecraft.siemv.pl';">minecraft.siemv (Minecraft)</button>
-            </div>
-            <br><br>
-            <div class="btn-group">
-                <button class="btn btn-success" onclick="location.href='https://twitter.com/KrzysiekSiemvin';">Twitter</button>
-                <button class="btn btn-success" onclick="location.href='https://github.com/KrzysiekSiemv';">GitHub</button>
-                <button class="btn btn-success" onclick="location.href='https://krzysieksiemv.itch.io/maze-full-of-darkness';">Maze Full of Darkness (Game on itch.io)</button>
-            </div>
-            </div>
+        <div class="container">
+            <h1>I Moved Out!</h1>
+            <p>Wyprowadziłem się z GitHuba na swój własny serwer. Ale spokojnie. Wszystko jest pod tą samą domeną.</p>
+            <ul>
+                <li><a href="https://os.siemv.pl">os.siemv</a> - Strona z systemami operacyjnymi</li>
+                <li><a href="https://siemv.pl">siemv.pl</a> - Portfolio</li>
+                <li><a href="https://school.siemv.pl">school.siemv</a> - Zadania szkolne</li>
+                <li><a href="https://file.siemv.pl">files.siemv</a> - Pliki publiczne</li>
+                <li><a href="https://searchsiemv.pl">search.siemv</a> - Strona domowa</li>
+                <li><a href="https://minecraft.siemv.pl">minecraft.siemv</a> - Strona poświęcona grze Minecraft</li>
+            </ul>
+            <br>
+            <ul>
+                <li><a href="https://twitter.com/KrzysiekSiemvin">Twitter</a> - Czasem coś tam wrzucam</li>
+                <li><a href="https://github.com/KrzysiekSiemv">GitHub</a> - Różne projekty</li>
+                <li><a href="https://tipply.pl/KrzysiekSiemv">Tipply</a> - Możesz wrzucić trochę grosza i wesprzeć mnie :)</li>
+            </ul>
         </div>
     </body>
 </html>
