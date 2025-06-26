@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faBootstrap, faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faLinux, faMicrosoft, faPhp, faReact, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { sendEmail } from './SendMail';
+// import { sendEmail } from './SendMail';
 
 function Topbar() {
   return (
@@ -225,7 +225,7 @@ function Contact() {
     e.preventDefault();
     
     try { 
-      await sendEmail({ name, email, subject, message });
+      // await sendEmail({ name, email, subject, message });
       setEmail("");
       setName("");
       setSubject("");
@@ -312,7 +312,7 @@ function Contact() {
   )
 }
 
-function App() {
+export default function App() {
   const sections = useRef<HTMLDivElement[]>([]);
   const [currentSection, setCurrentSection] = useState(0);
 
@@ -334,6 +334,8 @@ function App() {
     sections.current[currentSection].scrollIntoView({ behavior: 'smooth' });
   }, [currentSection]);
 
+  console.log("Hello?");
+
   return (
     <div onWheel={handleScroll}>
       <Topbar />
@@ -352,5 +354,3 @@ function App() {
     </div>
   )
 }
-
-export default App
