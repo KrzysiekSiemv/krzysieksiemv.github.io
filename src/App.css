@@ -1,0 +1,116 @@
+:root {
+  --background-color: #0f1010;
+  --primary-text: rgb(118, 251, 82);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text) !important;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#home, #about, #projects, #contact {
+  height: 100vh;
+  overflow-y: auto; /* Pozwala na przewijanie w obrębie sekcji */
+  scroll-behavior: smooth; /* Płynne przewijanie */
+}
+
+.animated-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated-paragraph.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-word {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  text-align: right;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.carousel-word.animating {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.carousel-word:not(.animating){
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 150;
+}
+
+header .display-1 {
+  font-weight: bold;
+}
+
+header .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+.topbar a {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+  .topbar a:hover {
+    color: #fff;
+  }
+
+.navbar-brand .name {
+  margin-left: 8px;
+}
+
+.mytable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mytable th {
+  vertical-align: top;
+  width: 30%;
+  padding-right: 12px;
+  text-align: right;
+}
+
+.links a {
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+  .links a:hover {
+    color: #fff;
+  }
+
+td, dd, p {
+  color: white;
+}
